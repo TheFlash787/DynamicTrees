@@ -67,6 +67,17 @@ public class TreeJungle extends TreeFamilyVanilla {
 	}
 	
 	@Override
+	public void registerSpecies(IForgeRegistry<Species> speciesRegistry) {
+		super.registerSpecies(speciesRegistry);
+		//speciesRegistry.register(megaSpecies);
+	}
+	
+	@Override
+	public boolean isThick() {
+		return true;
+	}
+	
+	@Override
 	public boolean autoCreateBranch() {
 		return true;
 	}
